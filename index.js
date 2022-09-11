@@ -1,5 +1,4 @@
 
-document.addEventListener("DOMContentLoaded",()=>{
 		let stylesSheet = "<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/Govin-R/themes/styles.css' type='text/css' media='all'> "
 		document.head.outerHTML=stylesSheet;
 		let container = document.createElement("div");
@@ -22,4 +21,4 @@ document.addEventListener("DOMContentLoaded",()=>{
 		onOff.addEventListener("change",()=>{
 		document.body.classList.toggle("theme-dark");	
 	});
-})
+
