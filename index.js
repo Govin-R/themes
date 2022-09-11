@@ -1,7 +1,8 @@
 
 		let link = document.createElement("link");
 		link.href="https://cdn.jsdelivr.net/gh/Govin-R/themes/styles.css";
-link.setAttribute("rel","stylesheet");
+	//		link.setAttribute("rel","stylesheet");
+//
 		
 		//let stylesSheet = "<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/Govin-R/themes/styles.css' type='text/css'> "
 		document.head.appendChild(link);
