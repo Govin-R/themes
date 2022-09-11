@@ -1,6 +1,10 @@
 
-		let stylesSheet = "<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/Govin-R/themes/styles.css' type='text/css' media='all'> "
-		document.head.outerHTML=stylesSheet;
+		let link = document.createElement("link");
+		link.href="https://cdn.jsdelivr.net/gh/Govin-R/themes/styles.css";
+link.setAttribute("rel","stylesheet");
+		
+		//let stylesSheet = "<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/Govin-R/themes/styles.css' type='text/css'> "
+		document.head.appendChild(link);
 		let container = document.createElement("div");
 		let onOff = document.createElement("input");
 		let cirCle = document.createElement("span");
