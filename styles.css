@@ -1,0 +1,55 @@
+@charset "UTF-8";
+#input-container {
+  position: fixed;
+  bottom: 1rem;
+  width: 6rem;
+  height: 3rem;
+}
+
+#onOff {
+  position: absolute;
+  width: 6rem;
+  height: 3rem;
+  appearance: none;
+  outline: none;
+  border: 2px solid black;
+  background-color: rgba(17, 17, 17, 0.1333333333);
+  border-radius: 3rem;
+  transition: all 400ms ease-in-out;
+}
+#onOff:checked {
+  background-color: #111;
+}
+#onOff:checked ~ #cirCle {
+  background-color: transparent;
+  transform: translateX(3rem) rotate(360deg);
+}
+#onOff:checked ~ #cirCle:before {
+  content: "🌜";
+}
+
+#cirCle {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border-radius: 99rem;
+  text-align: center;
+  transition: all 500ms ease-in-out;
+  pointer-events: none;
+}
+#cirCle:before {
+  position: relative;
+  content: "🌞";
+  font-size: 2.5rem;
+  top: -0.5rem;
+}
+
+.theme-dark {
+  background-color: black;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
